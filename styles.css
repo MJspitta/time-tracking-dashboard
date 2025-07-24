@@ -1,0 +1,49 @@
+:root {
+  /* Primary Colors */
+  --purple-600: hsl(246, 80%, 60%);
+  --white: hsl(0, 0%, 100%);
+  
+  /* Tracking Category Colors */
+  --orange-work: hsl(15, 100%, 70%);
+  --blue-play: hsl(195, 74%, 62%);
+  --pink-study:  hsl(348, 100%, 68%);
+  --green-exercise: hsl(145, 58%, 55%);
+  --purple-social: hsl(264, 64%, 52%);
+  --yellow-self-care: hsl(43, 84%, 65%);
+
+  /* Neutral Colors */
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+
+  /* Card Title Font Size */
+  --card-titles: 18px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--navy-950);
+  color: var(--white);
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid white;
+  display: flex;
+}
+
