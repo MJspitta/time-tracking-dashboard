@@ -36,14 +36,189 @@ body {
 }
 
 main {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 4rem 1.5rem;
 }
+
 
 .container {
-  border: 1px solid white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
+
+.profile-section {
+  background-color: var(--navy-900);
+  border-radius: 1rem;
+}
+
+.profile-main {
+  background-color: var(--purple-600);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.profile-img {
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid var(--white);
+  border-radius: 50%;
+}
+.profile > p {
+  color: var(--navy-200);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.profile > h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.track-periods {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.track-periods label {
+  color: var(--purple-500);
+  font-weight: 400;
+  transition: color .3s ease-in-out;
+}
+.track-periods label:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+.tracking-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.timetrack-card h2 {
+  font-size: var(--card-titles);
+  font-weight: 500;
+}
+.timetrack-card.work {
+  background-color: var(--orange-work);
+  background-image: url("./images/icon-work.svg");
+}
+.timetrack-card.play {
+  background-color: var(--blue-play);
+  background-image: url("./images/icon-play.svg");
+}
+.timetrack-card.study {
+  background-color: var(--pink-study);
+  background-image: url("./images/icon-study.svg");
+}
+.timetrack-card.exercise {
+  background-color: var(--green-exercise);
+  background-image: url("./images/icon-exercise.svg");
+}
+.timetrack-card.social {
+  background-color: var(--purple-social);
+  background-image: url("./images/icon-social.svg");
+}
+.timetrack-card.self-care {
+  background-color: var(--yellow-self-care);
+  background-image: url("./images/icon-self-care.svg");
+}
+
+.timetrack-card {
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 1rem;
+  padding-top: 2.5rem;
+}
+
+.card-content {
+  background-color: var(--navy-900);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: all .3s ease-in-out;
+}
+.card-content:hover {
+  background-color: var(--purple-500);
+  cursor: pointer;
+}
+.card-title, .card-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title img:hover {
+  width: 110%;
+}
+.current-time {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.previous-time {
+  color: var(--navy-200);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+
+@media screen and (min-width: 640px) {
+  .tracking-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .profile-main {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem 2rem 5rem;
+  }
+
+  .profile > h1 {
+    font-size: 2.5rem;
+  }
+
+  .track-periods {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .tracking-section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card-content {
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    height: 100%;
+  }
+
+  .card-time {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .current-time {
+    font-size: 3rem;
+  }
+}
