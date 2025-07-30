@@ -17,8 +17,8 @@ const displayTrackingData = async (period) => {
 
 
   cardsData.map((card) => {
-    const currDir = card.timeframes[period].current;
-    const prevDir = card.timeframes[period].previous;
+    const currDir = card.timeframes[period]?.current;
+    const prevDir = card.timeframes[period]?.previous;
 
     trackingSection.innerHTML += `
     <div class="timetrack-card ${card.title.toLowerCase().split(" ").join("-")}">

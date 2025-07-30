@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Time Tracking Dashboard Solution URL](https://your-solution-url.com)
+- Solution URL: [Time Tracking Dashboard Solution URL](https://www.frontendmentor.io/solutions/time-tracking-dashboard-yc-qVu2UEm)
 - Live Site URL: [Time Tracking Dashboard Live Site](https://mjspitta.github.io/time-tracking-dashboard/)
 
 ## My process
@@ -45,6 +45,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Frontend Mentor - [@MJspitta](https://www.frontendmentor.io/profile/MJspitta)
+- Twitter - [@madu_jang](https://x.com/madu_jang)
